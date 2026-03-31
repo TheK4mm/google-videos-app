@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #202020;
+  border-bottom: 1px solid #333;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 300px;
+  background: #121212;
+  border: 1px solid #333;
+  color: white;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background: #303030;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+.video-list {
+  width: 40%;
+  overflow-y: auto;
+  border-right: 1px solid #333;
+  padding: 10px;
+}
+
+.video-card {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #1a1a1a;
+}
+
+.video-card img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.video-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.content {
+  width: 60%;
+  padding: 20px;
+}
+
+.video-player img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.video-detail h3 {
+  color: #4ea1ff;
+  margin-bottom: 10px;
+}
+
+.video-detail p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-player iframe {
+  border-radius: 12px;
+  border: none;
+}
+
+.video-card {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background: #1a1a1a;
+  transition: 0.2s;
+}
+
+.video-card:hover {
+  background: #2a2a2a;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.video-title {
+  font-size: 14px;
+  margin: 0;
+  color: white;
+}
+
+.video-channel {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.video-meta {
+  font-size: 12px;
+  color: #777;
+}
+
+.video-detail {
+  margin-top: 15px;
+}
+
+.detail-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #4ea1ff;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.detail-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
