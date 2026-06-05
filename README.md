@@ -1,4 +1,4 @@
-# 🎬 Vidora — Google Videos Application
+# Vidora — Google Videos Application
 
 Aplicación web para **buscar y reproducir videos de Google en tiempo real**, construida sobre la
 infraestructura de **[SerpApi](https://serpapi.com/)** (Google Search API · engine `google_videos`).
@@ -8,20 +8,20 @@ búsquedas y modo claro/oscuro.
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- 🔎 Búsqueda de videos en tiempo real (Google Videos vía SerpApi).
-- ▶️ **Reproductor embebido** (YouTube / Vimeo) en un modal, con _fallback_ a la fuente original.
-- 🎚️ **Filtros** por duración, fecha y orden (mapeados al parámetro `tbs` nativo de Google).
-- ♾️ **Scroll infinito** con paginación y deduplicado de resultados.
-- 🕘 **Historial** de búsquedas recientes (localStorage).
-- 🌗 **Modo claro/oscuro** persistente, con diseño base oscuro.
-- ⚡ Backend con **caché en memoria**, validación y manejo de errores consistente.
-- 🧩 Estados de carga (skeletons), vacío y error en toda la UI.
+- Búsqueda de videos en tiempo real (Google Videos vía SerpApi).
+- **Reproductor embebido** (YouTube / Vimeo) en un modal, con _fallback_ a la fuente original.
+- **Filtros** por duración, fecha y orden (mapeados al parámetro `tbs` nativo de Google).
+- **Scroll infinito** con paginación y deduplicado de resultados.
+- **Historial** de búsquedas recientes (localStorage).
+- **Modo claro/oscuro** persistente, con diseño base oscuro.
+- Backend con **caché en memoria**, validación y manejo de errores consistente.
+- Estados de carga (skeletons), vacío y error en toda la UI.
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 | Capa     | Stack                                                            |
 | -------- | --------------------------------------------------------------- |
@@ -31,14 +31,14 @@ búsquedas y modo claro/oscuro.
 
 ---
 
-## 📦 Requisitos
+## Requisitos
 
 - Node.js 18+ y npm.
 - Una **API key de SerpApi** (gratis en <https://serpapi.com/manage-api-key>).
 
 ---
 
-## 🚀 Puesta en marcha
+## Puesta en marcha
 
 ```bash
 # 1. Instalar dependencias (frontend y backend)
@@ -72,7 +72,7 @@ En desarrollo, Vite hace **proxy** de `/api` hacia el backend, así que no hay q
 
 ---
 
-## 🔐 Variables de entorno (`server/.env`)
+## Variables de entorno (`server/.env`)
 
 | Variable        | Requerida | Por defecto | Descripción                          |
 | --------------- | --------- | ----------- | ------------------------------------ |
@@ -86,7 +86,7 @@ En desarrollo, Vite hace **proxy** de `/api` hacia el backend, así que no hay q
 
 ---
 
-## 🌐 API del backend
+## API del backend
 
 | Método | Endpoint           | Descripción                                    |
 | ------ | ------------------ | ---------------------------------------------- |
@@ -129,7 +129,7 @@ En desarrollo, Vite hace **proxy** de `/api` hacia el backend, así que no hay q
 
 ---
 
-## 🗂️ Estructura del proyecto
+## Estructura del proyecto
 
 ```
 google-videos-app/
@@ -159,7 +159,3 @@ google-videos-app/
 ```
 
 ---
-
-## 📄 Licencia
-
-ISC.
