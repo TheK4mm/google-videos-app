@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Design tokens
+   Theme-independent tokens live in :root. Color tokens are defined twice:
+   the dark palette is the default (also under [data-theme="dark"]) and the
+   light palette overrides under [data-theme="light"]. The theme is set
+   explicitly on <html data-theme="..."> by useTheme.
+   ========================================================================== */
+
+:root {
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Consolas, monospace;
+
+  /* Spacing scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-full: 999px;
+
+  /* Transitions */
+  --transition-fast: 120ms ease;
+  --transition: 180ms ease;
+
+  /* Layout */
+  --container-max: 1240px;
+  --header-height: 72px;
+  --z-header: 100;
+  --z-modal: 1000;
+}
+
+/* Dark palette — default */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #0b0c10;
+  --bg-grad: radial-gradient(1200px 600px at 50% -10%, rgba(124, 92, 255, 0.12), transparent 60%);
+  --surface: #15171e;
+  --surface-2: #1d2029;
+  --surface-3: #262a36;
+  --border: #262a36;
+  --border-strong: #333847;
+
+  --text: #e6e8ee;
+  --text-muted: #9aa1b1;
+  --text-faint: #6b7280;
+
+  --brand: #7c5cff;
+  --brand-strong: #6a45ff;
+  --brand-contrast: #ffffff;
+  --brand-soft: rgba(124, 92, 255, 0.14);
+  --ring: rgba(124, 92, 255, 0.5);
+
+  --danger: #ff5470;
+  --danger-soft: rgba(255, 84, 112, 0.14);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.55);
+
+  --skeleton-base: #1d2029;
+  --skeleton-shine: #2a2f3d;
+  --overlay: rgba(6, 7, 10, 0.78);
+}
+
+/* Light palette */
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #f6f7fb;
+  --bg-grad: radial-gradient(1200px 600px at 50% -10%, rgba(106, 69, 255, 0.10), transparent 60%);
+  --surface: #ffffff;
+  --surface-2: #f1f2f8;
+  --surface-3: #e7e9f2;
+  --border: #e2e5ee;
+  --border-strong: #d2d6e3;
+
+  --text: #14161c;
+  --text-muted: #5a6273;
+  --text-faint: #8b93a5;
+
+  --brand: #6a45ff;
+  --brand-strong: #5a36e8;
+  --brand-contrast: #ffffff;
+  --brand-soft: rgba(106, 69, 255, 0.10);
+  --ring: rgba(106, 69, 255, 0.35);
+
+  --danger: #e11d48;
+  --danger-soft: rgba(225, 29, 72, 0.10);
+
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 10px 30px rgba(16, 24, 40, 0.10);
+  --shadow-lg: 0 24px 60px rgba(16, 24, 40, 0.16);
+
+  --skeleton-base: #e7e9f2;
+  --skeleton-shine: #f3f4fa;
+  --overlay: rgba(16, 18, 27, 0.55);
+}

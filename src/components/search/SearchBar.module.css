@@ -1,0 +1,80 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-1) var(--space-1) var(--space-4);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form:focus-within {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+.searchIcon {
+  color: var(--text-faint);
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  padding: var(--space-2) 0;
+  font-size: 0.975rem;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-faint);
+}
+
+.clear {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  color: var(--text-faint);
+  flex-shrink: 0;
+}
+
+.clear:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.submit {
+  flex-shrink: 0;
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--brand-contrast);
+  background: linear-gradient(135deg, var(--brand), var(--brand-strong));
+  transition: filter var(--transition), transform var(--transition-fast);
+}
+
+.submit:hover {
+  filter: brightness(1.08);
+}
+
+.submit:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 480px) {
+  .submit {
+    padding: var(--space-2) var(--space-4);
+  }
+}

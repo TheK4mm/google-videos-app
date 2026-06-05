@@ -1,0 +1,29 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-8) var(--space-5);
+  gap: var(--space-3);
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 84px;
+  height: 84px;
+  border-radius: var(--radius-full);
+  color: var(--brand);
+  background: var(--brand-soft);
+  margin-bottom: var(--space-2);
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.text {
+  max-width: 440px;
+  color: var(--text-muted);
+}

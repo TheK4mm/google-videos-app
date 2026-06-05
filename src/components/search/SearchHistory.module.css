@@ -1,0 +1,92 @@
+.panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-2);
+  z-index: 50;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+}
+
+.clearAll {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  font-size: 0.74rem;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.clearAll:hover {
+  color: var(--danger);
+  background: var(--danger-soft);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius-md);
+}
+
+.item:hover {
+  background: var(--surface-2);
+}
+
+.pick {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  color: var(--text);
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.pick span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.clock {
+  color: var(--text-faint);
+  flex-shrink: 0;
+}
+
+.remove {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-right: var(--space-1);
+  border-radius: var(--radius-sm);
+  color: var(--text-faint);
+  flex-shrink: 0;
+}
+
+.remove:hover {
+  color: var(--text);
+}
