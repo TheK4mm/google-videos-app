@@ -1,4 +1,4 @@
-# Vidora — Google Videos Application
+# Google Videos Api Consumer Application
 
 Aplicación web para **buscar y reproducir videos de Google en tiempo real**, construida sobre la
 infraestructura de **[SerpApi](https://serpapi.com/)** (Google Search API · engine `google_videos`).
