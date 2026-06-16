@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-**Vidora** — a video search app over Google Videos. A React 19 / Vite frontend (repo root) talks to an Express 5 backend (`server/`) that proxies queries to **SerpApi**'s `google_videos` engine. The backend exists primarily to hide the SerpApi key and to normalize/cache responses.
+A video search app over Google Videos. A React 19 / Vite frontend (repo root) talks to an Express 5 backend (`server/`) that proxies queries to **SerpApi**'s `google_videos` engine. The backend exists primarily to hide the SerpApi key and to normalize/cache responses.
 
 ## Two separate packages, two module systems
 

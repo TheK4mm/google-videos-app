@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Vidora — buscador y reproductor de videos de Google en tiempo real (React + Vite frontend, Express + SerpApi backend).",
+  "description": "Buscador y reproductor de videos de Google en tiempo real (React + Vite frontend, Express + SerpApi backend).",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
