@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import Filters from "./components/search/Filters";
 import VideoGrid from "./components/videos/VideoGrid";
 import VideoModal from "./components/videos/VideoModal";
@@ -83,6 +84,8 @@ function App() {
           </>
         )}
       </main>
+
+      <Footer />
 
       <VideoModal video={selectedVideo} onClose={() => setSelectedVideo(null)} />
     </div>
